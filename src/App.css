@@ -1,0 +1,26 @@
+/* Global styles for DOLT Dashboard Orange & Black Theme */
+
+/* Ensure dark mode is always applied */
+html {
+  color-scheme: dark;
+}
+
+/* Smooth transitions throughout app */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* No transition on layout-affecting properties */
+*:not(.animate-in, .animate-out) {
+  transition-duration: 200ms;
+}
+
+/* Selection colors */
+::selection {
+  @apply bg-accent/30 text-white;
+}
+
+::-moz-selection {
+  @apply bg-accent/30 text-white;
+}
